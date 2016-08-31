@@ -3,3 +3,4 @@
 2) AntiD_patched.exe - ASLR disabled<br>
 3) AntiD_patched_dump.exe	- dump from OLLYDBG<br>
 4) AntiD_patched_dump_SCY.exe - fixed using SCYLLA<br>
+5) bruteforce.php - solution
