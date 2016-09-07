@@ -4,15 +4,9 @@
 	// refer to https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
 	$major = array(5); //6, 10
 	$minor = array(0,1,2);
- 
-	// break down last password char to sets (for distributed processing).
-	$lang = array();
-	for($i = intval($argv[1]); $i <= intval($argv[2]); $i++)
-		$lang[] = $i;
-	
-	echo "Lang array:\n";
-	var_dump($lang);
-		
+	// refer to https://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx
+	$lang = array( 0x8, 0x00, 0xc, 0x14, 0x10, 0x4 );
+			
 	for($a = 0x2d+12; $a > 0x2d;$a--){
 		for($b = 0x5e; $b <= 0x5e+ 31;$b++)
 			for($c = 0x42; $c <= 0x42 + 23;$c++)
